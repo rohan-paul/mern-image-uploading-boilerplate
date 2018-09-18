@@ -2,9 +2,11 @@
 
 #### No front-end implemented here (which would have been a simple form to upload file with a post action). So the file upload need to be done with postman.
 
-### In Postman > Navigate to http://localhost:8080/api/upload  > select POST > Body > select form-data and for the key field state 'element2' and choose file instead of text. Then in value field click on "Choose Files" and select a file from the local machine's file-browser. I will get below kind of output.
+### In Postman > Navigate to http://localhost:8080/api/upload  > select POST > Body > select form-data and for the key field state 'element2' and choose file instead of text. Then in value field click on "Choose Files" and select a file from the local machine's file-browser. I will get below kind of output in the Terminal.
 
 ```
+element1
+ExampleText
 Upload finished
 { data: <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 f2 00 00 00 65 08 03 00 00 00 81 5b 91 ad 00 00 00 81 50 4c 54 45 00 00 00 ff ff ff 4f 4f 4f ... >,
   name: 'smartport.jpeg',

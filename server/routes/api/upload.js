@@ -18,6 +18,9 @@ module.exports = (app) => {
    const element1 = req.body.element1;
    var busboy = new Busboy({ headers: req.headers });
 
+   console.log('element1');
+   console.log(element1)
+
    // The file upload has completed
    busboy.on('finish', function() {
     console.log('Upload finished');
