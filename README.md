@@ -2,7 +2,8 @@
 
 #### No front-end implemented here (which would have been a simple form to upload file with a post action). So the file upload need to be done with postman.
 
-### In Postman > Navigate to http://localhost:8080/api/upload  > select POST > Body > select form-data and for the key field state 'element2' and choose file instead of text. Then in value field click on "Choose Files" and select a file from the local machine's file-browser. I will get below kind of output in the Terminal.
+### In Postman > Navigate to the endpoint http://localhost:8080/api/upload  > select POST > Body > select form-data and for the key field (i.e. the parameters ) type 'element2' and choose file instead of text. Then in value field click on "Choose Files" and select a file from the local machine's file-browser. I will get below kind of output in the Terminal.
+
 
 ```
 element1
@@ -16,6 +17,7 @@ Upload finished
   size: 4167 }
 
 ```
+When I click on “Send” in Postman, I won’t see a response. The request didn’t have a response but if you check your terminal you’ll see file content.
 
 I added **busboy** to the starter boilerplate project that was using the following technologies:
 - [React](https://facebook.github.io/react/) and [React Router](https://reacttraining.com/react-router/) for the frontend
